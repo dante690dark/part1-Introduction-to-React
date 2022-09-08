@@ -14,6 +14,8 @@ In this part, you will find three directories, each of them is a react project, 
 ```bash
 # You point to the directory that you want, in this case it will be courseinfo
 $ cd courseinfo
+# You should run this command to install all dependencies for the project
+$ yarn install
 # Start the application
 $ yarn start
 ```

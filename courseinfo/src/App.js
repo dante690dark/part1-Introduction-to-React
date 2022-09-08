@@ -20,12 +20,8 @@ const Content = ({ object1, object2, object3 }) => {
   );
 };
 
-const Total = ({ object1, object2, object3 }) => {
-  return (
-    <p>
-      {`Number of exercises ${object1.exercises} ${object2.exercises} ${object3.exercises}`}
-    </p>
-  );
+const Total = ({ total }) => {
+  return <p>{`Number of exercises ${total}`}</p>;
 };
 
 const App = () => {
@@ -56,7 +52,9 @@ const App = () => {
     <>
       <Header name={name} />
       <Content object1={object1} object2={object2} object3={object3} />
-      <Total object1={object1} object2={object2} object3={object3} />
+      <Total
+        total={object1.exercises + object2.exercises + object3.exercises}
+      />
     </>
   );
 };
