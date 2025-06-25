@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Total = () => {
-  return <div></div>;
+const Total = ({ total }) => {
+  return <p>Number of exercises {total}</p>;
 };
 
 export default Total;
