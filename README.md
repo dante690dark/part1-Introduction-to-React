@@ -1,26 +1,29 @@
 # part1-Introduction-to-React
 
-This section is part of the [full stack open](https://fullstackopen.com/en/#course-contents) course, the first approach with the react library was had, where the application was created with [create react app](https://create-react-app.dev/), In addition, topics such as javascript fundamentals, component state, event handlers and debugging were reviewed.
+This section is part of the [Full Stack Open](https://fullstackopen.com/en/#course-contents) course. In this first approach to the React library, the application was created using [Vite](https://vitejs.dev/) for a faster and more modern development setup (migrated from Create React App).
+
+Topics covered in this part include JavaScript fundamentals, component state, event handlers, and debugging.
 
 ## Requirements
 
-- [node](https://nodejs.org/en/download/)
-- [yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable)
+- [Node.js](https://nodejs.org/en/download/)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) (optional; you can also use `npm`)
 
 ## Start the application
 
-In this part, you will find three directories, each of them is a react project, for instead:
+In this part, you will find three directories, each of them is a React project. For example:
 
 ```bash
-# You point to the directory that you want, in this case it will be courseinfo
+# Navigate to the directory of the desired project, e.g., courseinfo
 $ cd courseinfo
-# You should run this command to install all dependencies for the project
+
+# Install dependencies
 $ yarn install
+# or
+$ npm install
+
 # Start the application
-$ yarn start
+$ yarn dev
+# or
+$ npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
