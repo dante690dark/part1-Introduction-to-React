@@ -48,8 +48,14 @@ const App = () => {
         next anecdotes
       </button>
       <Title name='Anecdote with most vote' />
-      <span>{anecdotes[votes.indexOf(longestVote)]}</span>
-      <span>has {longestVote} votes</span>
+      {!longestVote ? (
+        <span>There are no votes yet</span>
+      ) : (
+        <>
+          <span>{anecdotes[votes.indexOf(longestVote)]}</span>
+          <span>has {longestVote} votes</span>
+        </>
+      )}
     </>
   );
 };
